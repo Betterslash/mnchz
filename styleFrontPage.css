@@ -1,0 +1,199 @@
+body {
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 23px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #606060;
+    color: white;
+}
+
+/* navigation bar */
+
+#divOfDrawer {
+    position: absolute;
+    left: -35%;
+    z-index: 1;
+    transition: left 0.75s;
+}
+#navBar{
+    position: fixed;
+    top: 0;
+    height: 12%;
+    width: 100%;
+    background-color: #9DD6C8;
+    z-index: -1;
+    transition: all 1s;
+}
+.shadow-header{
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+}
+.column {
+    float: left;
+    padding: 60px 65px;
+}
+.row{
+    margin: 0 250px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 500px) {
+    body{
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    div.chip{
+        display: none;
+    }
+    #navBar{
+        height: 8%;
+    }
+}
+.btn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: fixed;
+    left: 2%;
+    top: 3%;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btnOfCart{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: fixed;
+    left: 8%;
+    top: 3%;
+    transition: left 0.75s;
+}
+.btnOfCart:hover {
+    cursor: pointer;
+}
+
+/* product card */
+
+.card {
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.7);
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial, serif;
+    border-radius: 13px;
+    transition: all .5s;
+}
+.card:hover
+{
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.7);
+}
+.price {
+    color: #fdfdfd;
+    font-size: 25px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 12px;
+    transition: all 1.5s;
+}
+.card .productImg:hover{
+    max-height: 100%;
+    transform: scale(1.06);
+}
+
+.card button:hover {
+    color: black;
+    background-color: #77a4f6;
+}
+
+#logoImg{
+    position: fixed;
+    left: 36%;
+    top: -1.3%;
+    transition: all 1s;
+}
+#logoImg:hover
+{
+    transform: scale(1.1);
+}
+
+.productImg{
+    position: relative;
+    width:90%;
+    height: 300px;
+    transition: transform .2s;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+/*userProfile*/
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+

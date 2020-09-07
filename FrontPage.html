@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no, maximum-scale = 1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="styleFrontPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <meta charset="UTF-8">
+    <script>
+        $(window).scroll(function(){
+            if ($(window).scrollTop() >= 30) {
+                $('#navBar').addClass('shadow-header');
+            }
+            else {
+                $('#navBar').removeClass('shadow-header');
+            }
+        });
+        function getSideBar()
+        {
+            document.getElementById("divOfDrawer").style.left = "0";
+            document.getElementById("cartButn").style.left = '18%';
+            document.getElementById("navBar").style.backgroundColor = 'black';
+            document.getElementById("bars").style.color = 'white';
+            document.getElementById("cartB").style.color = 'white';
+            document.getElementById("username").style.color = 'white';
+        }
+        function close()
+        {
+            document.getElementById("divOfDrawer").style.left = '-35%';
+            document.getElementById("cartButn").style.left = '8%';
+            document.getElementById("navBar").style.backgroundColor = '#9DD6C8';
+            document.getElementById("bars").style.color = 'black';
+            document.getElementById("cartB").style.color = 'black';
+            document.getElementById("username").style.color = 'black';
+        }
+    </script>
+    <title>Munchiez</title>
+</head>
+<body>
+<!-- Drawer -->
+        <div id="divOfDrawer">
+            <ul>
+                <li style="background-color: rgba(0, 0, 0, 0.1);"><a class="active" href="#"><h2>Home</h2></a></li>
+                <li><a href="#" style="font-weight: bold;">Log Out</a></li>
+                <li><a href="#" style="font-weight: bold;">Stickers</a></li>
+                <li><a href="#" style="font-weight: bold;">Shirts</a></li>
+                <li><a href="#" style="font-weight: bold;">Goodies</a></li>
+                <li><a href="#" style="font-weight: bold;">Hot shot</a></li>
+                <li><a href="#" style="font-weight: bold;">Contact</a></li>
+                <li><a href="javascript:close()" style="font-weight: bold;">Close X</a></li>
+            </ul>
+        </div>
+        <div id = "navBar" class="navBar">
+            <div class="chip" style="position: fixed; left: 86%; top: 3.8%;">
+                <img src="assets/img_avatar.png" alt="Person" width="96" height="96">
+                <label id = username style="font-size:24px;font-weight: bold; font-family: Comic Sans MS, cursive, sans-serif">Pop Mihai</label>
+            </div>
+            <img src = "assets/Munchiez%20Graffitti%20Logo%20(B&W).png" alt = logo id = "logoImg" height="175px" >
+            <button class="btn" onclick="getSideBar();"><i class="fa fa-bars" style="color: black; font-size: 44px" id = bars></i></button>
+            <button class="btnOfCart" id ="cartButn"><i class="fa fa-shopping-cart" style="color: black; font-size: 44px" id = cartB></i></button>
+        </div>
+<!-- card -->
+        <div style="position: absolute; top: 12%; z-index: -2;">
+           <div class="row">
+            <div class = column>
+                <div class="card">
+                    <img src="assets/Dovleac1.png" alt="Mocky" class = productImg>
+                    <h1>Wack</h1>
+                    <p class="price">$19.99</p>
+                    <p>Some text!</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+               <div class = column>
+                   <div class="card">
+                       <img src="assets/Leaf.1.png" alt="Mocky" class = productImg>
+                       <h1>Wack</h1>
+                       <p class="price">$19.99</p>
+                       <p>Some text!</p>
+                       <p><button>Add to Cart</button></p>
+                   </div>
+               </div>
+               <div class = column>
+                   <div class="card">
+                       <img src="assets/Leaf.2.png" alt="Mocky" class = productImg>
+                       <h1>Wack</h1>
+                       <p class="price">$19.99</p>
+                       <p>Some text!</p>
+                       <p><button>Add to Cart</button></p>
+                   </div>
+               </div>
+               <div class = column>
+                   <div class="card">
+                       <img src="assets/Leaf1.2.png" alt="Mocky" class = productImg>
+                       <h1>Wack</h1>
+                       <p class="price">$19.99</p>
+                       <p>Some text!</p>
+                       <p><button>Add to Cart</button></p>
+                   </div>
+               </div>
+               <div class = column>
+                   <div class="card">
+                       <img src="assets/Leaf2.1.png" alt="Mocky" class = productImg>
+                       <h1>Wack</h1>
+                       <p class="price">$19.99</p>
+                       <p>Some text!</p>
+                       <p><button>Add to Cart</button></p>
+                   </div>
+               </div>
+               <div class = column>
+                   <div class="card">
+                       <img src="assets/Pack1-1.png" alt="Mocky" class = productImg>
+                       <h1>Wack</h1>
+                       <p class="price">$19.99</p>
+                       <p>Some text!</p>
+                       <p><button>Add to Cart</button></p>
+                   </div>
+               </div>
+            <div class = column>
+                <div class="card">
+                    <img src="assets/Pack1-2.png" alt="Mockyto" class = productImg>
+                    <h1>Mock</h1>
+                    <p class="price">$19.99</p>
+                    <p>Some text!</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+               <div class = column>
+                   <div class="card">
+                       <img src="assets/Pack2-2.png" alt="Mockyto" class = productImg>
+                       <h1>Mock</h1>
+                       <p class="price">$19.99</p>
+                       <p>Some text!</p>
+                       <p><button>Add to Cart</button></p>
+                   </div>
+               </div>
+               <div class = column>
+                   <div class="card">
+                       <img src="assets/Pack2-1.png" alt="Mockyto" class = productImg>
+                       <h1>Mock</h1>
+                       <p class="price">$19.99</p>
+                       <p>Some text!</p>
+                       <p><button>Add to Cart</button></p>
+                   </div>
+               </div>
+               <div class = column>
+                   <div class="card">
+                       <img src="assets/Pack1-3.png" alt="Mockyto" class = productImg>
+                       <h1>Mock</h1>
+                       <p class="price">$19.99</p>
+                       <p>Some text!</p>
+                       <p><button>Add to Cart</button></p>
+                   </div>
+               </div>
+               <div class = column>
+                   <div class="card">
+                       <img src="assets/Pack2-3.png" alt="Mockyto" class = productImg>
+                       <h1>Mock</h1>
+                       <p class="price">$19.99</p>
+                       <p>Some text!</p>
+                       <p><button>Add to Cart</button></p>
+                   </div>
+               </div>
+           </div>
+            <div style="background-color: transparent;position: relative;text-align: center; bottom: -18px">
+                <p style="font-size: 20px;"><i class="fa fa-user-circle" style="font-size: 30px"></i> : Pop Mihai</p>
+                <p style="font-size: 20px;"><i class="fa fa-instagram" style="font-size: 30px"></i> : pop.mihai</p>
+                <p style="font-size: 20px;"><a href="mailto:hege@example.com"><i class="fa fa-envelope" style="color: #0c0c0c; font-size: 30px"></i> : hege@example.com</a></p>
+            </div>
+        </div>
+</body>
+</html>

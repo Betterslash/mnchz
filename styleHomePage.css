@@ -1,0 +1,65 @@
+#navBar{
+    position: fixed;
+    top: 0;
+    height: 12%;
+    width: 100%;
+    background-color: #9DD6C8;
+    z-index: -1;
+    transition: all 1s;
+}
+body {
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+#logoImg{
+    position: fixed;
+    left: 36%;
+    top: -1.3%;
+    transition: all 1s;
+}
+#logoImg:hover
+{
+    transform: scale(1.1);
+}
+/*
+    slideshow
+*/
+.cardOfStory{
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 4px;
+    width : 40%;
+    height: 75%;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.32);
+}
+
+#cardImg{
+    position: absolute;
+    top : 3%;
+    left : 10%;
+    width: 80%;
+    border-radius: 5px;
+}
+#cardImg + h1{
+    position: absolute;
+    top : 60%;
+    left : 37.5%;
+    color: #fdfdfd;
+}
+h1 + p{
+    position: absolute;
+    top :70%;
+    font-size: 18px;
+    left: 10%;
+    color: #fdfdfd;
+}
+
